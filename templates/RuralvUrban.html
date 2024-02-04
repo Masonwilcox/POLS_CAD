@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Split Screen Images with Hover Effect and Back Button</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+  }
+  .container {
+    display: flex;
+    height: 100%;
+    position: relative; /* Needed to position the back button absolutely within */
+  }
+  .half {
+    flex: 1; /* Ensures each side takes up half the screen */
+    display: flex; /* Added for centering the image inside the .half */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    overflow: hidden; /* Prevents internal scrolling */
+  }
+  .half a {
+    display: block;
+    width: 89%; /* Set to 90% of the container's width */
+    height: 97%; /* Set to 98% of the container's height */
+    box-sizing: border-box; /* Ensures the border is included in the element's total width and height */
+    transition: transform 0.5s ease; /* Smooth transition for scaling effect */
+  }
+  .half img {
+    width: 95%; /* Full width of the anchor tag */
+    height: 98%; /* Full height of the anchor tag */
+    object-fit: cover; /* Ensures image covers the area without stretching */
+    border: 6px solid black; /* Add a black border back in */
+    transition: filter 0.5s ease; /* Smooth transition for filter effects */
+  }
+  .half a:hover img {
+    filter: brightness(85%); /* Dim the image on hover */
+    transform: scale(1.05); /* Slightly increase the size */
+  }
+  .back-button {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 49.3%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the button's dimensions to truly center it */
+    padding: 10px 20px;
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from links styled as buttons */
+    z-index: 2; /* Ensure the button is above the images */
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="half">
+    <a href="./Urban.html">
+      <img src="/assets/img/Urban.png" alt="Urban Landscape">
+    </a>
+  </div>
+  <div class="half">
+    <a href="./Rural.html">
+      <img src="/assets/img/Rural.png" alt="Rural Landscape">
+    </a>
+  </div>
+  <a href="./VanMap.html" class="back-button">Go Back</a>
+</div>
+
+</body>
+</html>

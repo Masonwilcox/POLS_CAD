@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alternating Image and Text Sections</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #080E4B; /* Dark blue background */
+    color: white; /* White text */
+    font-family: Arial, sans-serif;
+  }
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; /* Minimum height of 100% of the viewport height */
+  }
+  .section:nth-child(odd) {
+    flex-direction: row-reverse; /* Reverse the order for even sections */
+  }
+  .image {
+    flex: 1;
+    width: 50%;
+    height: 80vh; /* Full viewport height */
+    overflow: hidden;
+  }
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the container without losing aspect ratio */
+  }
+  .text {
+    flex: 1;
+    padding: 20px;
+    text-align: center; /* Center the text */
+  }
+  .back-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<a href="./RuralvUrban.html" class="back-button">Back</a>
+
+
+<div class="section">
+  <div class="image">
+    <img src="../assets/img/Pemby6.png" alt="Placeholder Image 1">
+  </div>
+  <div class="text">
+    <h2>Title 1</h2>
+    <p>This is a description for the first item. It can be as long or as short as needed.</p>
+  </div>
+</div>
+<div class="section">
+  <div class="image">
+    <img src="../assets/img/Pem3.jpeg" alt="Placeholder Image 2">
+  </div>
+  <div class="text">
+    <h2>Title 2</h2>
+    <p>This is a description for the second item. Adjust the content as needed.</p>
+    </div>
+</div>
+<div class="section">
+    <div class="image">
+      <img src="../assets/img/Pemb2.jpeg" alt="Placeholder Image 3">
+    </div>
+    <div class="text">
+      <h2>Title 2</h2>
+      <p>This is a description for the second item. Adjust the content as needed.</p>
+    </div>
+</div>
+<div class="section">
+  <div class="image">
+    <img src="../assets/img/Pem1.jpeg" alt="Placeholder Image 4">
+  </div>
+  <div class="text">
+    <h2>Title 2</h2>
+    <p>This is a description for the second item. Adjust the content as needed.</p>
+  </div>
+</div>
+<!-- Add more sections as needed -->
+
+</body>
+</html>

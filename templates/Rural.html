@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alternating Image and Text Sections</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #080E4B; /* Dark blue background */
+    color: white; /* White text */
+    font-family: Arial, sans-serif;
+  }
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; /* Minimum height of 100% of the viewport height */
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .section:nth-child(even) {
+    flex-direction: row-reverse; /* Reverse the order for even sections */
+  }
+  .image {
+    flex: 1;
+    width: 40%;
+    height: 70vh; /* Full viewport height */
+    overflow: hidden;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .image img {
+    width:100%;
+    height: 100%;
+    object-fit: cover; /* Cover the container without losing aspect ratio */
+  }
+  .text {
+    flex: 1;
+    padding: 20px;
+    max-width: 40%;
+    text-align: center; /* Center the text */
+  }
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .back-button2 {
+    position: relative;
+    bottom:  -10px;
+    left: 90%;
+    padding: 10px 20px;
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<a href="./RuralvUrban.html" class="back-button">Back</a>
+
+
+<div class="section">
+  <div class="image">
+    <img src="../assets/img/Pemb2.jpeg" alt="Placeholder Image 1">
+  </div>
+  <div class="text">
+    <h2>Rural Perspectives in Canada: Navigating the Urban-Rural Divide</h2>
+    <p>Canada is predominantly an urban nation, with 81% of its population living in urban areas as of 2011. This significant urban majority has profound implications for the country's rural regions, which often feel isolated from and exploited by their economic cores, such as Vancouver in British Columbia and Toronto in Ontario. This phenomenon, known as "rural alienation," has not only deepened the divide within the country but also made Canadian politics increasingly vulnerable to non-Canadian influences.Canada is predominantly an urban nation, with 81% of its population living in urban areas as of 2011. This significant urban majority has profound implications for the country's rural regions, which often feel isolated from and exploited by their economic cores, such as Vancouver in British Columbia and Toronto in Ontario. This phenomenon, known as "rural alienation," has not only deepened the divide within the country but also made Canadian politics increasingly vulnerable to non-Canadian influences.</p>
+  </div>
+</div>
+<div class="section">
+  <div class="image">
+    <img src="../assets/img/Pem7.webp" alt="Placeholder Image 2">
+  </div>
+  <div class="text">
+    <h2>Rural Perspectives in Canada: Navigating the Urban-Rural Divide</h2>
+    <p>As the rural population dwindles and the rural workforce shrinks, Canada has been compelled to look abroad for the resources once produced domestically. This shift has heightened concerns about external influences on Canadian politics and economy, underscoring the need for policies that bridge the urban-rural divide and strengthen national sovereignty.</p>
+    </div>
+</div>
+<div class="section">
+    <div class="image">
+      <img src="../assets/img/Pem3.jpeg" alt="Placeholder Image 3">
+    </div>
+    <div class="text">
+      <h2>Personal Reflections from Pemberton, B.C.</h2>
+      <p>My time in Pemberton, B.C., has been eye-opening, providing me with firsthand experience in rural living—from operating a tractor and baling hay to riding horses and picking potatoes. This experience has not only deepened my appreciation for working the land and connecting with nature but also highlighted the contentious issues that often arise between urban and rural perspectives, especially regarding gun laws.</p>
+    </div>
+</div>
+<div class="section">
+  <div class="image">
+    <img src="../assets/img/Pemb8.jpeg" alt="Placeholder Image 4">
+  </div>
+  <div class="text">
+    <h2>One Complex Exanmple of the Devied; Gun Laws</h2>
+    <p>Although with Cadets especially Biatholn I did use several guns  I generally support stringent gun control and am inclined to question the necessity of firearms, my interactions in Pemberton have introduced me to the rural standpoint on hunting and gun ownership. In rural communities, hunting is not merely a sport but a sustainable way to procure food. Conversations with friends from the First Nations reserve in Pemberton revealed hunting as a practice steeped in respect and tradition, arguably one of the most honourable ways to engage with the natural world in the 21st century.</p>
+  </div>
+</div>
+<div class="section">
+  <div class="image">
+    <img src="../assets/img/Pem9.avif" alt="Placeholder Image 4">
+  </div>
+  <div class="text">
+    <h2>Bridging the Divide</h2>
+    <p>These reflections underscore the complexity of the urban-rural divide and the importance of nuanced policies that respect both perspectives. Addressing rural alienation and its consequences for Canadian politics requires a balanced approach that values rural contributions and perspectives, ensuring that policies reflect the diverse needs and realities of all Canadians.</p>
+  </div>
+</div>
+<!-- Add more sections as needed -->
+
+      <a href="./RuralvUrban.html" class="back-button2">Back</a>
+
+</body>
+</html>
